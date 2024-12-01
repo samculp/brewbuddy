@@ -22,7 +22,7 @@ function Stats() {
   const caffeineLevel = calculateCurrentCaffeineLevel(globalData)
 
   const warningLevel = caffeineLevel < statusLevels["low"].maxLevel ? "low" :
-    caffeineLevel < statusLevels["moderate"].maxLevel ? "moderate" : high
+    caffeineLevel < statusLevels["moderate"].maxLevel ? "moderate" : "high"
 
   return ( 
     <>

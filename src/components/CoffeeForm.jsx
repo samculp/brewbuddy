@@ -36,15 +36,16 @@ function CoffeeForm(props) {
         ...(globalData || {})
       }
 
+      const newCost = (coffeeCost < 0) ? 0 : coffeeCost
       const nowTime = Date.now()
       const timeToSubtract = (hour * 60 * 60 * 1000) + (min * 60 * 1000)
       const timestamp = nowTime - timeToSubtract
       const newData = {
         name: selectedCoffee,
-        cost: coffeeCost
+        cost: newCost
       }
       newGlobalData[timestamp] = newData
-      console.log(timestamp, selectedCoffee, coffeeCost)
+      console.log(timestamp, selectedCoffee, newCost)
 
       // update the global state
       setGlobalData(newGlobalData)
@@ -61,8 +62,6 @@ function CoffeeForm(props) {
       setCoffeeCost(0)
     } catch (err) {
       console.log(err.message)
-    } finally {
-
     }
   }
 

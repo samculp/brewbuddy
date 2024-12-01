@@ -34,7 +34,7 @@ function Layout(props) {
 
   const footer = (
     <footer>
-      <p><span className="text-gradient">BrewBuddy</span> was made by <a href="https://github.com/samculp" target="_blank">Sam Culp</a><br/> using the <a href="https://www.fantacss.smoljames.com" target="_blank">FantaCSS</a> design library.<br/>Check out the project on <a target="_blank" >GitHub</a></p>
+      <p><span className="text-gradient">BrewBuddy</span> was made by <a href="https://github.com/samculp" target="_blank">Sam Culp</a> using the <a href="https://www.fantacss.smoljames.com" target="_blank">FantaCSS</a> design library.<br/>Check out the project on <a target="_blank" href="https://github.com/samculp/brewbuddy">GitHub</a>!</p>
     </footer>
   )
 

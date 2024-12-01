@@ -14,7 +14,7 @@ function History() {
       <p><i>Hover for more information!</i></p>
 
       <div className="coffee-history">
-        {Object.keys(globalData).sort((a, b) => {b - a}).map((utcTime, coffeeIndex) => {
+        {Object.keys(globalData).sort((a, b) => b - a).map((utcTime, coffeeIndex) => {
           const coffee = globalData[utcTime]
           const timeSinceConsumed = timeSinceConsumption(utcTime)
           const originalAmount = getCaffeineAmount(coffee.name)
